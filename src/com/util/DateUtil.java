@@ -23,6 +23,8 @@ public class DateUtil {
 	 * 鏃ユ湡
 	 */
 	public final static String DATE = "yyyy-MM-dd";
+	
+	public final static String DATE_NO = "yyyyMMdd";
 	/**
 	 * 鏃堕棿
 	 */

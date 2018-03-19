@@ -39,6 +39,21 @@
     <servlet-name>hessianAPI</servlet-name>
     <url-pattern>/kj/services/api</url-pattern>
   </servlet-mapping>
+  
+  <!--图片上传service  -->
+  <servlet>
+    <servlet-name>imageUpDownService</servlet-name>
+    <servlet-class>com.caucho.hessian.server.HessianServlet
+		</servlet-class>
+    <init-param>
+      <param-name>service-class</param-name>
+      <param-value>com.file.service.impl.FtpImageServiceImpl</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>imageUpDownService</servlet-name>
+    <url-pattern>/image/imageUpDownService</url-pattern>
+  </servlet-mapping>
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>

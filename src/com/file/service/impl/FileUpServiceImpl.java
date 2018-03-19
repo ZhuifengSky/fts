@@ -30,10 +30,10 @@ public class FileUpServiceImpl implements IFileUpService {
 		String folderPath = path + File.separatorChar + folderName;
 		File file = new File(folderPath);
 		if (!file.exists() && !file.isDirectory()) {
-			System.out.println("//不存在");
+			logger.info("//不存在");
 			file.mkdir();
 		} else {
-			System.out.println("//目录存在");
+			logger.info("//目录存在");
 		}
 		FileOutputStream fs = null;
 		try {
